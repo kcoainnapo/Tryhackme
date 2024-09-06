@@ -52,6 +52,7 @@ sudo -l
 ![Image Alt](https://github.com/kcoainnapo/Tryhackme/blob/main/Pickle%20Rick/Images/sudo.png?raw=true)
 
 BINGO ! 
+
 We can look into the root directory using sudo :
 
 ![Image Alt](https://github.com/kcoainnapo/Tryhackme/blob/main/Pickle%20Rick/Images/root-directory.png?raw=true)
