@@ -1,3 +1,5 @@
+/Images/
+￼
 We started with a port scan using nmap :
 ```
 nmap 10.10.188.206 -p-
@@ -45,7 +47,6 @@ We click on our uploaded file "rev.php5" in http://10.10.188.206/uploads/ and we
 ![Image Alt](https://github.com/kcoainnapo/Tryhackme/blob/main/RootMe/Images/initial-access.png?raw=true)
 
 We can find the user.txt file with this command : 
-
 
 
 Now we want to enumerate the system to find privilege escalation vectors so we use the following command to find SUID binaries : 
