@@ -1,5 +1,3 @@
-/Images/
-￼
 We started with a port scan using nmap :
 ```
 nmap 10.10.188.206 -p-
