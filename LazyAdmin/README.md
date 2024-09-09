@@ -16,6 +16,7 @@ Fuzzing further from the discovered directory, we found multiple subdirectories.
 There is a login form at http://10.10.244.177/content/as/
 
 There is also an interesting list of files available at http://10.10.244.177/content/inc/
+
 The admin of the website has allowed directory listing when it should not be allowed.
 
 The most interesting file is mysql_backup_20191129023059-1.5.1.sql
@@ -56,7 +57,9 @@ cat user.txt
 ![Image Alt](https://github.com/kcoainnapo/tryhackme/blob/main/LazyAdmin/Images/user-flag.png?raw=true)
 
 
-Next, we run sudo -l, which shows that we can run /home/itguy/backup.pl as root. This file is essentially running /etc/copy.sh.
+Next, we run sudo -l, which shows that we can run /home/itguy/backup.pl as root.
+
+This file is essentially running /etc/copy.sh.
 
 ![Image Alt](https://github.com/kcoainnapo/tryhackme/blob/main/LazyAdmin/Images/sudoL.png?raw=true)
 
